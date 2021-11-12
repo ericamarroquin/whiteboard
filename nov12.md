@@ -122,3 +122,30 @@ You may implement any of the above algorithms (or your own) to solve the problem
 ### Initial Thoughts
 
 - Hm.
+
+Quick sort: 
+
+- Pick a pivot element
+- Items less than the pivot element go to the left, greater than go to the right
+- Do the same to items to the sides of pivot element
+
+
+Bubble sort:
+
+- Sorts array by comparing two adjacent elements and swaps them
+- Does have the possibility to go through an already sorted 
+
+```javascript
+const bubblesort = (inputArray) => {
+  for (let i = 0; i < inputArray.length; i++) {
+    for (let j = 0; j < inputArray.length; i++) {
+      if (inputArray[j] > inputArray[j+ 1]) {
+        let temp = inputArray[j];
+        inputArray[j] = inputArray[j+1];
+        inputArray[j+1] = temp;
+      }
+    }
+  }
+  return inputArray;
+}
+```

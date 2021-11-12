@@ -48,7 +48,7 @@ Write an algorithm that removes duplicates from an array. Do not use a function 
 - Loop through length of array
 - End condition checks length of string
 - Push to .. array .. outside ? No, that's bad. 
-- Will attempt later
+- Will attempt later.
 
 
 
@@ -74,6 +74,26 @@ Output: "3ab2c4da"
 - Recursively...
 - Yeah, not happening.
 
+```javascript
+const compress = (string) => {
+  let outputString = "";
+  let count = 0;
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] === string[i+1]) {
+      count++
+    } else {
+      if (count === 0) {
+        outputString+= string[i];
+        count = 0;
+      } else {
+        outputString+= (count+1) + string[i];
+        count = 0;
+      }
+    }
+  }
+  return outputString;
+}
+```
 
 
 ## Question #4: Checking for Uniqueness

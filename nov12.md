@@ -50,6 +50,8 @@ Write an algorithm that removes duplicates from an array. Do not use a function 
 - Push to .. array .. outside ? No, that's bad. 
 - Will attempt later
 
+
+
 ## Question #3: Compressing Strings
 
 Write an algorithm that takes a string with repeated characters and compresses them, using a number to show how many times the repeated character has been compressed. For instance, aaa would be written as 3a. Solve the problem with and without recursion.
@@ -71,4 +73,28 @@ Output: "3ab2c4da"
 
 - Recursively...
 - Yeah, not happening.
+
+
+
+## Question #4: Checking for Uniqueness
+
+Write an algorithm that determines whether all the elements in a string are unique. You may not convert the string into an array or use array methods to solve this problem. The algorithm should return a boolean.
+
+### Example
+
+**Input**: "hello"
+
+**Output**: false
+
+**Input**: "copyright"
+
+**Output**: true
+
+- Loop through separated array
+- Nested for loop through the rest of the array
+- If match is found, immediately return false
+- If match not found, return true
+
+- Recursively...
+- Maybe later.
 

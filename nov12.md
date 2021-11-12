@@ -99,6 +99,19 @@ Write an algorithm that determines whether all the elements in a string are uniq
 - Maybe later.
 
 
+```javascript
+const isUnique = (string) => {
+  for (let i = 0; i < string.length; i++) {
+    for (let j = i+1; j < string.length; j++) {
+      if (string[i] === string[j]) {
+        return false;
+      }
+    }
+  }
+  return true;
+}
+```
+
 
 ## Question #5: Array Sorting
 

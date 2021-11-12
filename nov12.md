@@ -21,3 +21,31 @@ You may not use the replace() method or regular expressions to solve this proble
 - End condition will check index against length of string
 - If statement to change from space to %20
 - Return recursively with i + 1
+
+
+## Question #2: Array Deduping
+
+Write an algorithm that removes duplicates from an array. Do not use a function like filter() to solve this. Once you have solved the problem, demonstrate how it can be solved with filter(). Solve the problem with and without recursion.
+
+### Example
+
+**Input**: [7, 9, "hi", 12, "hi" 7, 53]
+
+**Output**: [7, 9, "hi", 12, 53]
+
+### Initial Thoughts
+
+- Create new array
+- Loop through old array
+- If value in old array is not found in new array, push to new array
+- Return new array
+
+- Could also create two nested for loops
+- Loop through old array twice, one holding place and other checking for duplicates
+
+
+- Recursively ...
+- Loop through length of array
+- End condition checks length of string
+- Push to .. array .. outside ? No, that's bad. 
+- Will attempt later

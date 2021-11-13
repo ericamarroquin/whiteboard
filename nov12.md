@@ -84,7 +84,6 @@ const compress = (string) => {
     } else {
       if (count === 0) {
         outputString+= string[i];
-        count = 0;
       } else {
         outputString+= (count+1) + string[i];
         count = 0;
@@ -129,6 +128,18 @@ const isUnique = (string) => {
     }
   }
   return true;
+}
+```
+
+```javascript
+const isUnique = (string) => {
+  let uniqueBool = true;
+  if (uniqueBool === false) {
+    return false;
+  }
+  for (let i = 0; i < string.length; i++) { //while loop for is false
+    // use substring method
+  }
 }
 ```
 

@@ -137,7 +137,12 @@ const isUnique = (string) => {
   if (uniqueBool === false) {
     return false;
   }
-  for (let i = 0; i < string.length; i++) { //while loop for is false
+  
+  while (uniqueBool === true){
+    
+  }
+
+  // for (let i = 0; i < string.length; i++) { //while loop for is false
     // use substring method
   }
 }
